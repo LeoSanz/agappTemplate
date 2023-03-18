@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: agapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: agapp
+  template:
+    metadata:
+      labels:
+        app: agapp
+    spec:
+      containers:
+      - name: agapp
+        image: leosanz/agapp:latest
+        ports:
+        - containerPort: 80
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 80
+          initialDelaySeconds: 5
+          periodSeconds: 5
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 80
+          initialDelaySeconds: 5
+          periodSeconds: 5
