@@ -5,7 +5,10 @@ Aqui encontraras un archivo Dockerfile y otros archivos relacionados a una aplic
 
 Además, se han agregado los probes de Kubernetes necesarios para validar que el servicio esté funcionando correctamente. Sigue los pasos descritos en este documento para asegurarte de que la aplicación Flask esté ejecutándose sin problemas.
 
-Puedes probarlo rápidamente ejecutando:
+Todos los archivos respestivos los encontraras en la carperta de Improved:
+https://github.com/LeoSanz/agappTemplate/tree/main/Improved
+
+Para una vista rapida ejecuta:
 ```console
 docker run -d -p 5000:5000 leosanz/agapp:latest
 ```
