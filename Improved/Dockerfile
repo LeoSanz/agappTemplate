@@ -1,5 +1,5 @@
 # Specifies the base image to use for building the Docker image.
-FROM python:3.9-slim-buster  
+FROM python:alpine:3.17
 
 # Updates the package lists in the container and installs the specified packages, and removes the package lists to reduce the size of the container.
 RUN apt-get update \  
