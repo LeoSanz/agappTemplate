@@ -1,6 +1,6 @@
-# This is an improve version of the orginal deployment files.
+## Esta es una versión mejorada de los archivos de despliegue originales.
 
-### To test run:
+Para echar un vistazo rápido, ejecuta:
 ```console
 docker build -t leosanz/agapp:latest 
 ```
